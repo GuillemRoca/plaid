@@ -32,8 +32,8 @@ def gitCommitCount = 100 +
         Integer.parseInt('git rev-list --count HEAD'.execute([], project.rootDir).text.trim())
 
 android {
-    compileSdkVersion 24
-    buildToolsVersion '24.0.2'
+    compileSdkVersion 25
+    buildToolsVersion '25.0.0'
 
     defaultConfig {
         applicationId "io.plaidapp"
@@ -53,6 +53,11 @@ android {
                 "DESIGNER_NEWS_CLIENT_SECRET", "\"${designer_news_client_secret}\""
         buildConfigField "String",
                 "PROCUCT_HUNT_DEVELOPER_TOKEN", "\"${product_hunt_developer_token}\""
+
+        def filesAuthorityValue = applicationId + ".shareprovider";
+        buildConfigField "String", "FILES_AUTHORITY", "\"${filesAuthorityValue}\""
+
+        manifestPlaceholders = [filesAuthority: filesAuthorityValue]
     }
     buildTypes {
         release {
@@ -72,7 +77,7 @@ repositories {
     jcenter()
 }
 
-ext.supportLibVersion = '24.2.0'
+ext.supportLibVersion = '25.0.0'
 
 dependencies {
     compile "com.android.support:palette-v7:${supportLibVersion}"
