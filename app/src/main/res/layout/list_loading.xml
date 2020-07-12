@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Copyright 2016 Google Inc.
+  Copyright 2016 Google LLC.
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 
 <ProgressBar
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/loading"
+    android:id="@+id/list_loading"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="@dimen/spacing_large"

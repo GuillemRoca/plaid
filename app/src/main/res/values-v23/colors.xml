@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Copyright 2016 Google Inc.
+  Copyright 2016 Google LLC.
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -17,6 +17,6 @@
 
 <resources>
 
-    <color name="light_immersive_bars">#b3eeeeee</color> <!-- 70% grey 200 -->
+    <color name="light_status_bar">@color/light_immersive_bars</color>
 
 </resources>
